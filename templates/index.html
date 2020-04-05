@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        <--href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"-->
+    >
+</head>
+<body>
+    <div>
+    <form action="/send" method="POST">
+        <article id="body_mass">
+            <h1>Body Mass Index Calculator</h1>
+            Enter weight in pounds: <input type="text" name="weight_pounds"/> {{weight_error}} <br><br>
+            Enter height: <input type="text" name="height_feet" /> ft {{feet_error}} <input type="text\" name="height_inches" /> inch {{inch_error}}<br><br>
+            <input type="submit" value="Calculate BMI" name="submit" />
+        </article><br><br>
+        <div id="bmi_output">
+            Your BMI category: {{BMI_ct}}<br><br>
+            Your BMI:{{BMI__}}
+        </div>
+    </form>
+        </div>
+
+        <div>
+            <form action="/send1" method="POST">
+        <article id="retirement">
+            <h2>retirement Calculator</h2>
+            Enter your age: <input type="text" name="age" /> <br><br>
+            Enter your annual salary: <input type="text" name="annual_salary" /> <br> <br>
+            Enter percentage saved of your monthly salary: <input type="text" name="percentage_saved" /> <br><br>
+            Enter savings goal: <input type="text" name="savings_goal" />
+            <input type="submit" value="Calculate " name="submit" />
+        </article><br><br>
+        <div id="retirement_output">
+            {{years_to_achieve}}<br><br>
+            {{age_}}
+        </div>
+        
+    </form>
+    </div>
+    {{x}}
+</body>
+</html>
