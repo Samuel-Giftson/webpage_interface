@@ -29,10 +29,10 @@
             <form action="/send1" method="POST">
         <article id="retirement">
             <h2>retirement Calculator</h2>
-            Enter your age: <input type="text" name="age" /> <br><br>
-            Enter your annual salary: <input type="text" name="annual_salary" /> <br> <br>
-            Enter percentage saved of your monthly salary: <input type="text" name="percentage_saved" /> <br><br>
-            Enter savings goal: <input type="text" name="savings_goal" />
+            Enter your age: <input type="text" name="age" /> {{age_error}}<br><br>
+            Enter your annual salary: <input type="text" name="annual_salary" /> {{annual_salary_error}}<br> <br>
+            Enter percentage saved of your monthly salary: <input type="text" name="percentage_saved" /> {{percentage_saved_error}} <br><br>
+            Enter savings goal: <input type="text" name="savings_goal" /> {{savings_goal_error}} <br><br>
             <input type="submit" value="Calculate " name="submit" />
         </article><br><br>
         <div id="retirement_output">
